@@ -1,0 +1,86 @@
+    1  yum install git
+    2  sudo yum -y install git
+    3  git login
+    4  ls -lart
+    5  git config --global user.email ranjitcrajput@gmail.com
+    6  git config --global user.name "RanjitRajput"
+    7  mkdir Rtest
+    8  cd Rtest/
+    9  ll
+   10  git clone https://github.com/RanjitRajput/Reenatest.git
+   11  ll
+   12  cd Reenatest/
+   13  ls -lart
+   14  sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+   15  sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+   16  sudo yum -y install docker-ce
+   17  sudo systemctl start docker && sudo systemctl enable docker
+   18  sudo usermod -aG docker cloud_user
+   19  docker image ls
+   20  cd Rtest/
+   21  ll
+   22  docker container ls
+   23  docker image ls
+   24  ll
+   25  cd Reenatest/
+   26  ll
+   27  ls -al
+   28  vim README.md 
+   29  git status
+   30  git add .
+   31  git status
+   32  git commit -m "Updated Readme"
+   33  git statsu
+   34  git status
+   35  git push .
+   36  git push 
+   37  git status
+   38  ll
+   39  mkdir dockercompose && cd dockercompose
+   40  ll
+   41  sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   42  sudo chmod +x /usr/local/bin/docker-compose
+   43  docker-compose --version
+   44  ll
+   45  mkdir webapp
+   46  echo "<h2>It Works</h2>" > webapp/index.html
+   47  cd ..
+   48  git status
+   49  git add .
+   50  git status
+   51  git commit -m "created dockercompose directory"
+   52  git status
+   53  git push
+   54  vim  webapp/Dockerfile
+   55  ll
+   56  cd dockercompose/
+   57  ll
+   58  vim  webapp/Dockerfile
+   59  vim  docker-compose.yml
+   60  cd ..
+   61  git status
+   62  git add .
+   63  git commit -m "Updated dockercompose file"
+   64  git status
+   65  git push
+   66  docker-compose build
+   67  cd dockercompose/
+   68  docker-compose build
+   69  docker-compose ps
+   70  docker conatiner ls
+   71  docker container ls
+   72  docker image ls
+   73  docker-compose up -d
+   74  docker-compose ls
+   75  docker-compose ps
+   76  curl localhost:8080
+   77  ll
+   78  cat docker-compose.yml 
+   79  hostname
+   80  ll
+   81  history 
+   82  cd Rtest/
+   83  ll
+   84  cd Reenatest/
+   85  ll
+   86  history > reference.txt
